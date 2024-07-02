@@ -2,6 +2,8 @@ import {HealthBar} from "/HealthBar.js";
 
 let hb = null;
 
+document.documentElement.DOMContentLoaded = setUp;
+
 function setUp(){
     document.getElementById("field").addEventListener("click",makeHB);
     document.getElementById("field").addEventListener("unclick",deleteHB);
