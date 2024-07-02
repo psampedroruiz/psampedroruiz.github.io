@@ -2,7 +2,7 @@ import {HealthBar} from "/HealthBar.js";
 
 let hb = null;
 
-document.documentElement.DOMContentLoaded = setUp;
+document.addEventListener("DOMContentLoaded",setUp);
 
 function setUp(){
     document.getElementById("field").addEventListener("click",makeHB);
