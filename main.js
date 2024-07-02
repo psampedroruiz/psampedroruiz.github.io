@@ -1,6 +1,6 @@
 import {HealthBar} from "/HealthBar.js";
 
-hb = null;
+let hb = null;
 
 function setUp(){
     document.getElementById("field").addEventListener("click",makeHB);
@@ -10,9 +10,9 @@ function setUp(){
 
 function makeHB(event)
 {
-    coords = this.getBoundingClientRect();
-    hbX = event.clientX - coords.x;
-    hbY = event.clientY - coords.y;
+    let coords = this.getBoundingClientRect();
+    let hbX = event.clientX - coords.x;
+    let hbY = event.clientY - coords.y;
 
     hb = new HealthBar(10,40,hbX,hbY,3);
     hb.assign(this);
